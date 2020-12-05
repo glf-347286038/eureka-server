@@ -7,6 +7,6 @@ eureka:
       defaultZone: http://localhost:1000/eureka/
 #      是否获取注册中心服务端的信息，自己没必要获取自己
     fetch-registry: false
-#    是否将信息保存到注册中心服务端，自己没必要保存自己
+#    是否将信息保存到注册中心服务端，没必要保存自己信息
     register-with-eureka: false
 
