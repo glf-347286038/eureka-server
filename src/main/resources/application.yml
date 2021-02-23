@@ -1,13 +1,15 @@
-spring:
-  application:
-    name:eureka-server
+#spring:
+#  application:
+#    name:eureka-server
 server:
   port: 8000
 eureka:
+  instance:
+    hostname: eureka-master
   client:
     service-url:
 #      对外公开的地址，用以将注册中心客户端的信息注册到此处
-      defaultZone: http://localhost:${server.port}/eureka/
+      defaultZone: http://175.27.134.153:8000/eureka/,http://47.98.149.207:8000/eureka/
 #      是否获取注册中心服务端的信息，自己没必要获取自己
     fetch-registry: false
 #    是否将信息保存到注册中心服务端，没必要保存自己信息
